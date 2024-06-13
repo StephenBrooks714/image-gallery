@@ -1,0 +1,30 @@
+.hover-zoom {
+    transition: transform 0.5s ease;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.fadeInLeft {
+    animation: fadeInLeft 0.5s ease-in-out;
+
+    @keyframes fadeInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
+
+.imgSize {
+    height: 340px;
+    width: 100%;
+
+    @media (max-width: 768px) {
+        height: 400px;
+    }
+}
